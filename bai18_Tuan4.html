@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <title>Document</title>
+    <style>
+        *{
+            margin: auto;
+            padding: 0px;
+        }
+        .wrapper{
+            height: 700px;
+            width: 1089px;
+            background-color: rgba(255, 255, 255, 0.829);
+        }
+        .menu {
+          position: relative;
+          display: inline-block;
+        }
+        .menu a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+        header{
+            height: 60px;
+            width: 100%;
+            background-color: rgb(255, 122, 98);
+            color: rgb(255, 255, 255);
+            text-align: left;
+            font-size: 13px;
+            
+        }
+        nav{
+            height: 50px;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.795);
+            float: left;
+            font-family: cursive;
+            font-size: 14px;
+        }
+
+        .dropdown-content3 {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 250px;
+          box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+          padding: 5px;
+          z-index: 1;
+        }
+        
+        .product:hover .dropdown-content3  {
+          display: block;
+          background-color: rgb(0, 0, 0);
+          margin-left: 0px;
+        }
+
+        .menu li{
+            float: left;
+            width: 180px;
+            height: 50px;
+            line-height: 50px;
+            list-style: none;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            display: inline-block;
+            
+        }
+        .menu p:hover{
+            background: #ffa600;
+            
+        }
+        
+        .container{
+            float: left;
+            padding-top: 20px;
+            padding-left: 20px;
+            font-family: monospace;
+        }
+        .container2{
+            float: left;
+            padding-top: 20px;
+            font-family: sans-serif;
+        }
+        
+        .content{
+            height: 400px;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            clear: both;
+        }
+        aside{
+            height: 700px;
+            width: 100%;
+            float: left;
+            background-color: #ffffff;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        
+
+        </style>
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <div class="container" >
+            <h1>Specifiction</h1>
+            </div>
+        <div class="container2" >
+                <h1><i>|Discourse</i></h1>
+                </div>
+    </header>
+    <nav>
+        <div class="app">
+            <button style="background-color: #ffffff; float: right;"><i class="material-icons" style="color: #8a8a8acb; font-size: 30px;">list</i></button>
+        </div>
+        <div class="search">
+        <button style="background-color: #ffffff; float: right;"><i class="material-icons" style="color: #8a8a8acb; font-size: 30px;">search</i></button>
+        </div>
+        <div class="search">
+            <button style="background-color: rgb(65, 141, 241); float: right;font-size: 20px; color: #ffffff;"><i class="material-icons" style="color: #ffffff; font-size: 30px;">	perm_identity</i>Log in</button>
+        </div>
+        <div class="search">
+            <button style="background-color: rgb(65, 141, 241); float: right;font-size: 20px; color: #ffffff; padding-right: 20px;"><i class="material-icons" style="color: #ffffff; font-size: 30px;">p</i>Sign up</button>
+        </div>
+        
+    </nav>
+    <div class="content" >
+        <aside>
+           <h1 style="font-size: 30px; padding-left: 20px;">How to get emails for everything in this forum</h1>
+           <p style="padding-left: 20px;"><i class="material-icons" style="color: #ff7b00; font-size: 20px;">stop</i>CSS</p>
+           <br>
+           <hr>
+           <br>
+           <img src="https://2012.cascadiajs.com/asset/img/domenic.jpg" height="70px" style="padding-left: 20px; float: left;" alt="">
+    <div style="float: left; padding-left: 10px;">
+        <a href="https://discourse.wicg.io/u/domenic " style="color: rgba(0, 0, 0, 0.616); text-decoration: none; ">Domenic</a>
+        <p style="font-size: 20px;">Many of us may have become accustomed to mailing lists, and would like a similar workflow. To do this:</p>
+    </div>
+    <div style="float: left; padding-left: 100px; color: #0000008a;">
+        - Click on your avatar in the upper-right
+        <br>
+        - Click “Preferences”
+        <br>
+        - Scroll down to the “Email” section
+        <br>
+        - Check everything, including and especially “Receive email notifications and email digests even if you are active on the forum.”
+        <br>
+        For some reason this also emails you for posts you yourself make, which seems bad. Missing feature in Discourse, or is there a hidden toggle I missed?
+    </div>
+    <img src="https://discourse.wicg.io/uploads/default/original/2X/8/88582dd928b9cc859275eaf7a65c7dff70b4e28a.png" style="padding-left: 100px; padding-top: 20px;" alt="">
+<div style="float: left; padding-left: 100px;padding-top: 10px; color: #0000008a;">
+    Obviously window.prompt can’t be made async, and the second param of window.prompt is already used for the default value, so perhaps it would be better to start over with a new function. Although it would be great to have a sync version of this API too - so that we don’t have to sprinkle async throughout a codebase that was completely sync up until that point.
+</div>        
+</aside>
+
+    </div>
+    </div>
+</div>
+
+</body>
+</html>

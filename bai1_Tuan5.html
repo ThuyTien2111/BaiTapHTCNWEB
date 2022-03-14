@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+         function KTCD(){
+            var re= /[0-9]{1,}/;
+            if(re.test(document.getElementById('txtCD').value.trim())==false){
+                cd.innerText = "* bắt buộc, phải là số có ít nhất một chữ số";
+                return false;
+            }
+            else{
+                cd.innerText = "* ";
+                return true;
+            }
+        }
+        function KTCR(){
+            var re= /[0-9]{1,}/;
+            if(re.test(document.getElementById('txtCR').value.trim())==false){
+                cr.innerText = "* bắt buộc, phải là số có ít nhất một chữ số";
+                return false;
+            }
+            else if(document.getElementById('txtCR').value>document.getElementById('txtCD').value){
+                cr.innerText = "* phải nhỏ hơn chiều dài";
+                return false;
+            }
+            else{
+                cr.innerText = "* ";
+                return true;
+            }
+        }
+        function Sub(){
+            if(KTCD()==false|| KTCR()== false){
+                alert("Bạn chưa nhập đầy đủ và đúng thông tin");
+            }
+            else{
+                var p=(Number(document.getElementById('txtCD').value)+Number(document.getElementById('txtCR').value))*2;
+                var s=document.getElementById('txtCD').value*document.getElementById('txtCR').value;
+                var w=open("FormValidation_info.html","Ket qua");
+                w.document.write("<b> THONG TIN HINH CHU NHAT </b>");
+                w.document.write("Chu vi: "+p+"<br>");
+                w.document.write("Dien tich: "+s+"<br>");
+
+            }
+        }
+    </script>
+     <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div{
+            border-bottom: 1px solid rgb(202, 202, 202);
+            margin: auto;
+            padding-bottom: 10px; 
+            padding-top: 5px;
+            width: 720px;
+
+        }
+        .title{
+            float: left;
+            width: 200px;
+            text-align: right;
+            padding-right: 10px;
+            color: black;
+            font-size: 18px;
+        }
+        .radio-buttons label{
+            float: none;
+        }
+        .submit{
+            text-align: center;
+        }
+        input[type=submit], input[type=reset]{
+            padding: .1em .2em;
+            border: 1px solid black;
+            -moz-border-radius: 5px ;
+            -webkit-border-radius: 5px ;
+            border-radius: 5px;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            text-shadow: 0 -1px 0 black;
+            font-size: 18px;
+        }
+        span{
+            color: red;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">HÌNH CHỮ NHẬT</h2>
+    <form name="form1" onsubmit="Sub();" method="post" action="#">
+    <div>
+        <label for="txtCD" class="title">
+        Chiều dài:
+        </label>
+        <input id="txtCD" onblur="return KTCD();" type="text" name="txtCD" size="30" placeholder="txtCD"/>
+        <span id="cd">*</span>
+    </div>
+    <div>
+        <label for="txtCR" class="title">
+        Chiều rộng:
+        </label>
+        <input id="txtCR" onblur="return KTCR();" type="text" name="txtCR" size="30" placeholder="txtCR"/>
+        <span id="cr">*</span>
+    </div>
+    <div class="submit">
+        <input type="submit" value="Tính" id="submit"/>
+        <input type="reset" value="Hủy" id="submit">
+    </div>
+    </form>
+</body>
+</html>

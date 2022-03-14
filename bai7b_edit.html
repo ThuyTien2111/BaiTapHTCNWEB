@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: auto;
+            padding: 0px;
+        }
+        .wrapper{
+            height: 700px;
+            width: 1089px;
+            background-color: white;
+        }
+        .menu {
+          position: relative;
+          display: inline-block;
+        }
+        header{
+            height: 120px;
+            width: 100%;
+            background-color: rgb(250, 219, 219);
+            color: black;
+            text-align: left;
+            font-size: large;
+            
+        }
+        nav{
+            height: 30px;
+            width: 100%;
+            background-color: black;
+            float: left;
+        }
+
+        .dropdown-content {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 250px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          padding: 5px;
+          z-index: 1;
+        }
+        
+        .product:hover .dropdown-content {
+          display: block;
+          background-color: white;
+          margin-left: 0px;
+        }
+
+        .menu li{
+            width: 216.2px;
+            float: left;
+            height: 50px;
+            line-height: 30px;
+            list-style: none;
+            color: aliceblue;
+            border: 0.5px;
+            border-style: solid;
+            text-align: center;
+            display: inline-block;
+            
+        }
+        .menu p:hover{
+            background: #45e652;
+            color: #F1F1F1;
+        }
+        .menu a{
+            text-decoration: none;
+            color: black;
+        }
+        .dropdown-content a:hover{
+            background: #45e652;
+            color: #F1F1F1;
+        }
+
+ 
+
+        </style>
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <img src="https://www.financeshopgroup.com/apple-touch-icon.png" alt="" height="90px" style="float:left; padding: 20px; padding-bottom:50px ;">
+        <h1 style="padding-top: 50px">
+            Shopping
+        </h1>
+    </header>
+    <nav>
+        <ul class="menu">
+            <li>
+                <span><p>HOME</p></span>
+            </li>
+            <li>
+                <span><p>ABOUT ?</p></span>
+            </li>
+            <li class="product">
+                
+                    <span><p>PORFOLIO</p></span>
+                    <div class="dropdown-content">
+                    <p><a href="https://www.engineersupply.com/">Photography</a></p>
+                    <p><a href="https://shopfpt.vn/">Web & User interface Design</a></p>
+                    <p><a href="https://www.energyshop.com/">Illustration</a></p>
+                    </div>
+            </li>
+            <li>
+                <span><p>NEWS</p></span>
+            </li>
+            <li>
+                <span><p>CONTACT</p></span>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+</body>
+</html>

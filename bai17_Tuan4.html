@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <title>Document</title>
+    <style>
+        *{
+            margin: auto;
+            padding: 0px;
+        }
+        .wrapper{
+            height: 700px;
+            width: 1089px;
+            background-color: rgba(255, 255, 255, 0.829);
+        }
+        .menu {
+          position: relative;
+          display: inline-block;
+        }
+        .menu a{
+            text-decoration: none;
+            color: rgb(255, 255, 255);
+        }
+        header{
+            height: 120px;
+            width: 100%;
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            text-align: left;
+            font-size: large;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            
+        }
+        nav{
+            height: 50px;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.795);
+            float: left;
+            font-family: cursive;
+            font-size: 14px;
+        }
+
+        .dropdown-content3 {
+          display: none;
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 250px;
+          box-shadow: 2px 2px 2px 2px rgba(0,0,0,0.2);
+          padding: 5px;
+          z-index: 1;
+        }
+        
+        .product:hover .dropdown-content3  {
+          display: block;
+          background-color: rgb(0, 0, 0);
+          margin-left: 0px;
+        }
+
+        .menu li{
+            float: left;
+            width: 180px;
+            height: 50px;
+            line-height: 50px;
+            list-style: none;
+            color: rgb(255, 255, 255);
+            text-align: center;
+            display: inline-block;
+            
+        }
+        .menu p:hover{
+            background: #ffa600;
+            
+        }
+        
+        .container{
+            float: left;
+            padding-top: 40px;
+            padding-left: 30px;
+        }
+        
+.topnav {
+  overflow: hidden;
+  background-color: #000000;
+  color: #f9f9f9;
+}
+.search-container {
+  float: left;
+  margin-top: -5px;
+  margin-bottom: 5px;
+}
+.topnav input[type=text] {
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 17px;
+  border: none;
+}
+ 
+@media screen and (max-width: 600px) {
+  .topnav .search-container {
+    float: none;
+  }
+}
+        .content{
+            height: 400px;
+            width: 100%;
+            background-color: rgb(255, 255, 255);
+            clear: both;
+        }
+        aside{
+            height: 600px;
+            width: 100%;
+            float: left;
+            background-color: #dfdfdf;
+        }
+        .arc p{
+            background-color: #ffffff;
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            box-shadow: 0.2px 0.2px 5px rgba(0, 0, 0, 0.411);
+            padding-left: 20px;
+            padding-bottom: 10px;
+            line-height: 30px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .arc a{
+            text-decoration: none;
+            color: #000000;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .arc a:hover{
+            color: #504e4e;
+        }
+        
+
+        
+
+        </style>
+</head>
+<body>
+<div class="wrapper">
+    <header>
+        <div class="container" >
+            <h1>CSS-TRICKS</h1>
+            </div>
+        <img src="https://www.clipartkey.com/mpngs/m/75-757429_treehouse-logo-png-teamtreehouse-logo-png.png" alt="" height="90px" style="float:right; padding: 20px; padding-bottom:50px ;">
+        
+    </header>
+    <nav>
+        <ul class="menu">
+            <li>
+                <span><p><a href="https://css-tricks.com/archives/">Blog</a></p></span>
+            </li>
+            <li >
+                <span><p><a href="https://css-tricks.com/video-screencasts/">Video</a></p></span>
+            </li>
+            <li >
+                
+                    <span><p><a href="https://css-tricks.com/almanac/">Almanac</a></p></span>      
+            </li>
+            <li>
+                <span><p><a href="https://css-tricks.com/newsletters/">Forums</a></p></span>
+            </li>
+            <li>
+                <span><p><a href="https://css-tricks.com/guides/">Jobs</a></p></span>
+            </li>
+            <li>
+                <span><p><a href="https://css-tricks.com/tag/form-controls/">Lodge</a></p></span>
+            </li>
+        </ul>
+    </nav>
+    <div class="content" >
+        <aside>
+            <div class="topnav" >
+                <div class="search-container">
+                  <form action="/action_page.php">
+                    <button style="background-color: #000000;"><i class="material-icons" style="color: #ffffff; font-size: 50px;">search</i></button>
+                    <input type="text" placeholder="" name="search">
+                  </form>
+                </div>
+              </div>
+        <div class="arc">
+            <p>
+                <img src="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=700" alt="" style="height: 40px; padding-top: 10px;">
+                <a href="https://css-tricks.com/author/chriscoyier/" style="color: #a5a4a4; font-family: fantasy; ">Chris Coyier</a>
+                <br>
+                <a href="https://css-tricks.com/build-membership-businesses-with-memberful/"><i class="material-icons" style="color: #000000; font-size: 20px;">trending_flat</i>Build Membership Businesses with Memberful <i class="material-icons" style="color:#a5a4a4; font-size: 20px;">all_inclusive</i></a>
+                <br>
+                <i>What would your business be like if you sold memberships?</i> It might be more than fun to think about, in fact, it might just be transformative. With membership, would you include little add-ons or perks for your biggest fans? Or could it become the entire core of what you do? Likewise, what might you help your clients build?
+                <br>
+                Whatever you decide to do (or perhaps what a client has hired you to do), you can get it done with <a href="https://memberful.com/?utm_source=CSS+Tricks&utm_medium=Sponsored+Post" style="color: rgb(111, 178, 255); font-size: 15px;">Memberful</a>. It’s the best software for building membership businesses, used by the biggest creators on the web.
+            </p>
+            <p>
+                <img src="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=700" alt="" style="height: 40px; padding-top: 10px;">
+                <a href="https://css-tricks.com/build-membership-businesses-with-memberful/" style="color: #a5a4a4; font-family: fantasy; ">Chris Coyier</a>
+                <br>
+                <a href="https://css-tricks.com/performance-links-february-2022/"><i class="material-icons" style="color: #000000; font-size: 20px;">trending_flat</i>7 Fresh Links on Performance For March 2022 <i class="material-icons" style="color:#a5a4a4; font-size: 20px;">all_inclusive</i></a>
+                <br>
+                I have a handful of good links to articles about performance that are burning a hole in my bookmarks folder, and wanna drop them here to share.
+                <br>
+                Erwin Hofman notes that he was using icon fonts out of sheer convenience, but that there are loads of reasons not to use them. He provides details on his new strategy for using icons, which is based on the technique. Five years later, I’m still a big fan of just <a href="https://css-tricks.com/pretty-good-svg-icon-system/ " style="color: rgb(129, 179, 255); font-size: 15px;">dunking the in the HTML</a> where you need them. It’s just an HTML partial like any other.
+            </p>
+
+            
+        </div>
+        </aside>
+
+    </div>
+    </div>
+</div>
+
+</body>
+</html>
